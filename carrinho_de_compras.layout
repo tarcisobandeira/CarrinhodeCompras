@@ -1,13 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="default" />
+	<File name="produtos.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="288" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="produtos.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="269" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
 [Editors]
-Order=0
-Focused=0
+Order=0,1,2,3,4
+Focused=3
 [Editor_0]
-CursorCol=39
-CursorRow=24
-TopLine=10
+CursorCol=3
+CursorRow=11
+TopLine=21
 LeftChar=1
 [Editor_1]
 CursorCol=1
 CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_2]
+CursorCol=26
+CursorRow=6
+TopLine=1
+LeftChar=1
+[Editor_3]
+CursorCol=29
+CursorRow=10
+TopLine=1
+LeftChar=1
+[Editor_4]
+CursorCol=20
+CursorRow=4
 TopLine=1
 LeftChar=1

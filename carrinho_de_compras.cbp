@@ -15,6 +15,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="produtos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="produtos.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

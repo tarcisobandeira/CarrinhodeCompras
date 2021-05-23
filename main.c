@@ -2,44 +2,48 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
+#include "produto.h"
 
-typedef struct{
+struct produto{
 	int codigo;
-	char descricao[9];
+	char descricao[30];
 	float precounit;
-} produto;
-
-typedef struct{
-	int numitem;
-	struct produto *p;
-	int qtd;
-	float *precototal;
-} carrinho;
-
-void printar(produto p){
-	fflush(stdin);
-	printf("%d, %s, %.2f\n", p.codigo, p.descricao, p.precounit);
-}
-
-produto addProdutos(produto p, int i){
-	p.codigo = i+1;
-	fflush(stdin);
-	strncpy(p.descricao, "Coca Cola", 9);
-	p.precounit = (float) i + 0.5;
-	
-	return p;
-}
+};
 
 void main(){
 	setlocale(LC_ALL, "Portuguese");
-	int i;
-	produto estoque[99];
+	int i, opt;
+	Produto prod[10];
+	addProdutos(prod);
 	
-	for(i=0;i<=99;i++){
-		estoque[i] = addProdutos(estoque[i],i);	
-	}
-	for(i=0;i<=99;i++){
-		printar(estoque[i]);
-	}
-	
+	do{
+		printf("\n Loginha do Manuel\n");
+		printf(" -----------------\n");
+		printf(" 1 - Comprar\n");
+		printf(" 2 - Ver a Lista dos Produtos\n");
+		printf(" 0 - Sair\n");
+		printf(" -----------------\n");
+		printf("Escolha: ");
+		scanf("%d", &opt);
+		
+		fflush(stdin);
+		
+		switch(opt){
+			case 1:
+				break;
+			case 2:
+				system("cls");
+				ListarProd(prod);
+				system("pause");
+				system("cls");
+				break;
+			case 0:
+				break;
+			default:
+					printf("\n Instruções:\n\tSó pode usar números de 0 a 2.\n\n");
+					system("pause");
+					system("cls");
+		}
+	}while(opt != 0);
+	printf("Desligando...");
 }
