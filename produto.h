@@ -1,7 +1,11 @@
 #ifndef PRODUTO_H
 #define PRODUTO_H
 
-typedef struct produto Produto;
+typedef struct{
+	int codigo;
+	char descricao[30];
+	float precounit;
+}Produto;
 
 void addProdutos(Produto * p);
 

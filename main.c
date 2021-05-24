@@ -3,16 +3,11 @@
 #include <locale.h>
 #include <string.h>
 #include "produto.h"
-
-struct produto{
-	int codigo;
-	char descricao[30];
-	float precounit;
-};
+#include "carrinho.h"
 
 void main(){
 	setlocale(LC_ALL, "Portuguese");
-	int i, opt;
+	int opt;
 	Produto prod[10];
 	addProdutos(prod);
 	
@@ -30,6 +25,8 @@ void main(){
 		
 		switch(opt){
 			case 1:
+				system("cls");
+				menuCarrinho(prod);
 				break;
 			case 2:
 				system("cls");

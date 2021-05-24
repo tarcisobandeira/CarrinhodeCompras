@@ -3,12 +3,6 @@
 #include <string.h>
 #include "produto.h"
 
-struct produto {
-	int codigo;
-	char descricao[30];
-	float precounit;
-};
-
 void ListarProd(Produto * p) {
 	int i;
 	for(i=0;i<10;i++){
