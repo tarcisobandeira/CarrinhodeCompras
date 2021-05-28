@@ -22,12 +22,6 @@ void menuCarrinho(Produto * p){
 		
 		switch(opt){
 			case 0:
-				if(car.numitem == 0){
-					opt = 1;
-					printf("\n\n Você não tem itens no seu carrinho. \n\n\n");
-					system("pause");
-					system("cls");
-				}
 				break;
 				
 			case 555:
@@ -66,7 +60,11 @@ void menuCarrinho(Produto * p){
 		
 	}while(opt != 0);
 	system("cls");
-	finalizar(p);
+	if(car.numitem > 0){
+		finalizar(p);
+	}else{
+		printf("\n O mercadinho do Seu Manuel agradece a sua vinda.\n\n");
+	}
 	system("pause");
 	system("cls");
 	

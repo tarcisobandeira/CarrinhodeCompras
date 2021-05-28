@@ -12,7 +12,7 @@ void main(){
 	addProdutos(prod);
 	
 	do{
-		printf("\n Loginha do Manuel\n");
+		printf("\n Mercadinho do Seu Manuel\n");
 		printf(" -----------------\n");
 		printf(" 1 - Comprar\n");
 		printf(" 2 - Ver a Lista dos Produtos\n");
