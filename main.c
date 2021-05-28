@@ -18,7 +18,7 @@ void main(){
 		printf(" 2 - Ver a Lista dos Produtos\n");
 		printf(" 0 - Sair\n");
 		printf(" -----------------\n");
-		printf("Escolha: ");
+		printf(" Escolha: ");
 		scanf("%d", &opt);
 		
 		fflush(stdin);
@@ -42,5 +42,5 @@ void main(){
 					system("cls");
 		}
 	}while(opt != 0);
-	printf("Desligando...");
+	printf(" Desligando...");
 }

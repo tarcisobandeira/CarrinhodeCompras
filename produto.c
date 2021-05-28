@@ -7,9 +7,9 @@ void ListarProd(Produto * p) {
 	int i;
 	for(i=0;i<10;i++){
 		if(i==9){
-			printf("---------------\nProduto: %s\nCódigo:  %d\nValor:   %.2f\n---------------\n\n", p[i].descricao, p[i].codigo, p[i].precounit);
+			printf("---------------\n Produto: %s\n Código:  %d\n Valor:   %.2f\n---------------\n\n", p[i].descricao, p[i].codigo, p[i].precounit);
 		}else{
-			printf("---------------\nProduto: %s\nCódigo:  %d\nValor:   %.2f\n", p[i].descricao, p[i].codigo, p[i].precounit);
+			printf("---------------\n Produto: %s\n Código:  %d\n Valor:   %.2f\n", p[i].descricao, p[i].codigo, p[i].precounit);
 		}
 	}
 }
